@@ -18,32 +18,60 @@
         text-decoration: underline;
         cursor: pointer;
     }
+
+    h1 {
+        font-family: courier;
+    }
+
+    .class_B1 {
+        background-color: aliceblue;
+        background-size: cover;
+        border-radius: 10px;
+    }
+
+    .class_B2 {
+        background-color: rgb(235, 235, 235);
+        background-size: cover;
+        border-radius: 10px;
+    }
+
+    .button {
+        width: 100px;
+        height: 30px;
+        background-color: rgb(79, 162, 79);
+        margin-left: 40px;
+        margin-top: 20px;
+        cursor: default;
+        color: #0a0a0a;
+        text-decoration: none;
+    }
 </style>
 
 <body>
-    <div style="flex-grow: 1;">
+    <div style="flex-grow: 1; ">
         <center>
             <h1>Про сайт</h1>
         </center>
 
     </div>
-    <div style="display: flex;">
-        <div style="flex-grow: 1;">
-            Перелік товару
+    <div style="display: flex; height: 723 ;align-items: center;">
+        <div class="class_B2" style="flex-grow: 1; width: 150px;">
+            <h3>Перелік товару</h3>
             <nav>
                 <ul>
-                    <li><a class="class_A1" href="1.html">Миша Asus ROG Harpe Ace Aim Lab Edition Bluetooth</a></li>
-                    <li><a class="class_A1" href="2.html">Миша Asus ROG Spatha X USB Black</a></li>
+                    <a class="class_A1" href="1.html">Миша Asus ROG Harpe Ace Aim Lab Edition Bluetooth</a>
+                    <br>
+                    <a class="class_A1" href="2.html">Миша Asus ROG Spatha X USB Black</a>
                 </ul>
             </nav>
         </div>
-        <div style="flex-grow: 2;">
+        <div style="flex-grow: 2; width: 1000px;">
             У нас можна знайти буквально все. Ми продаємо за справедливою ціною та надаємо гарантію, бо вважаємо, що
             онлайн-шопінг має бути максимально зручним і безпечним.
             І щоразу, коли хтось натискає «Купити», ми розуміємо, що робимо потрібну справу.
         </div>
-        <div style="flex-grow: 1;width: 150px;">
-            Контакти
+        <div style="flex-grow: 1;width: 150px; margin-left: 10px;">
+            <h3>Контакти</h3>
             <ul>
                 Номер телефону: +380501234567
                 <br>
@@ -53,7 +81,7 @@
     </div>
     <div style="flex-grow: 1;">
         <center>
-        Дякую за відвідування
+            Дякую за відвідування
         </center>
     </div>
 </body>

@@ -18,6 +18,33 @@
         text-decoration: underline;
         cursor: pointer;
     }
+
+    h1 {
+        font-family: courier;
+    }
+
+    .class_B1 {
+        background-color: aliceblue;
+        background-size: cover;
+        border-radius: 10px;
+    }
+
+    .class_B2 {
+        background-color: rgb(235, 235, 235);
+        background-size: cover;
+        border-radius: 10px;
+    }
+
+    .button {
+        width: 100px;
+        height: 30px;
+        background-color: rgb(79, 162, 79);
+        margin-left: 40px;
+        margin-top: 20px;
+        cursor: default;
+        color: #0a0a0a;
+        text-decoration: none;
+    }
 </style>
 
 <body>
@@ -25,27 +52,26 @@
         <h1>Миша Asus ROG Harpe Ace Aim Lab Edition Bluetooth</h1>
     </div>
     <div style="display: flex;">
-        <div style="flex-grow: 1;">
-            Перелік товару
+        <div class="class_B2" style="flex-grow: 1; width: 150px;">
+            <h3>Перелік товару</h3>
             <nav>
                 <ul>
-                    <li><a class="class_A1" href="1.html">Миша Asus ROG Harpe Ace Aim Lab Edition Bluetooth</a></li>
-                    <li><a class="class_A1" href="2.html">Миша Asus ROG Spatha X USB Black</a></li>
+                    <a class="class_A1" href="1.html">Миша Asus ROG Harpe Ace Aim Lab Edition Bluetooth</a>
+                    <br>
+                    <a class="class_A1" href="2.html">Миша Asus ROG Spatha X USB Black</a>
                 </ul>
             </nav>
         </div>
-        <div style="flex-grow: 1;">
+        <div style="flex-grow: 1; width: 1000px;">
             <img src="https://www.proshop.no/Images/915x900/3135167_4505d414c107.png" alt="1" title="2" widht="100%"
-                height="400" /><br />
-            <p align="center">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/VE8sTgG3HNk?si=GDqy4dY8H8XzdmWX"
-                    title="YouTube video player" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    allowfullscreen></iframe>
-            </p>
+                height="400" />
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/VE8sTgG3HNk?si=GDqy4dY8H8XzdmWX"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
         </div>
-        <div style="flex-grow: 1;">
-            Опис Миші
+        <div class="class_B1" style="flex-grow: 1; width: 150px;">
+            <h3>Опис Миші</h3>
             <ul>
                 <il>Її особливості</il>
             </ul>
@@ -57,7 +83,7 @@
                 <li>5 кнопок </li>
                 <li>Чрний колір</li>
             </ol>
-            <table border="2" style="border-collapse: collapse;" >
+            <table border="2" style="border-collapse: collapse; margin-left: 30px;">
                 <tbody>
                     <tr>
                         <td colspan="2">Кольори в наявності</td>
@@ -72,10 +98,15 @@
                     </tr>
                 </tbody>
             </table>
+            <div>
+                <button class="button" type="button" onclick="window.location.href='pay.html'">
+                    купити
+                </button>
+            </div>
         </div>
     </div>
     <div style="display: flex">
-        <div style="flex-grow: 1;">
+        <div style="flex-grow: 1;" onclick="location.href='index.html';">
             <nav>
                 <center>
                     <a class="class_A1" href="index.html">Про сайт</a>
