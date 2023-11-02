@@ -9,7 +9,7 @@
 </head>
 
 <body>
-    <div style="flex-grow: 1; ">
+    <div style="flex-grow: 1;">
         <div>
             <header class="header">
                 <div class="logo">
@@ -25,7 +25,25 @@
                 </div>
                 <div class="group">
                     <div class="cotalog">
-                        <a class="class_A2" href="">Каталог</a>
+                        <li class="li1" style="display: block;"><a class="class_A2" href="">Каталог</a>
+                            <ul class="catalog_1">
+                                <li onclick="window.location.href ='3.html'" class="catalog_2">
+                                    <span style="margin-left: 20px;">
+                                        Ноутбуки
+                                    </span>
+                                </li>
+                                <li onclick="window.location.href ='2.html'" class="catalog_2">
+                                    <span style="margin-left: 20px;">
+                                        Клавіатури
+                                    </span>
+                                </li>
+                                <li onclick="window.location.href ='1.html'" class="catalog_2">
+                                    <span style="margin-left: 20px;">
+                                        Миші
+                                    </span>
+                                </li>
+                            </ul>
+                        </li>
                     </div>
                 </div>
                 <div class="pro_site">
@@ -38,15 +56,16 @@
         <center>
             <h1>Про сайт</h1>
         </center>
+
     </div>
     <div style="display: flex; height: 500px ; width: 100% ;">
         <div class="class_B2" style="flex-grow: 1;">
             <div style="margin: 0px 10px;">
-                <h3>Перелік товару</h3>
-                <div style="margin-left: 10px;">
-                    <a class="class_A1" href="1.html">Миша Asus ROG Harpe Ace Aim Lab Edition Bluetooth</a>
-                    <br>
-                    <a class="class_A1" href="2.html">Миша Asus ROG Spatha X USB Black</a>
+                <h3>Каталог</h3>
+                <div style="flex-grow:1; margin-left: 10px;">
+                    <li style="margin: 5px 0px;"><a class="class_A1_1" href="3.html">Ноутбуки</a></li>
+                    <li style="margin: 5px 0px;"><a class="class_A1_1" href="2.html">Клавіатури</a></li>
+                    <li style="margin: 5px 0px;"><a class="class_A1_1" href="1.html">Миші</a></li>
                 </div>
             </div>
         </div>
@@ -76,6 +95,17 @@
             Дякую за відвідування
         </span>
     </div>
+    <script>
+        function openTab(tabName) {
+            var i;
+            var tabContent = document.getElementsByClassName("cont");
+            for (i = 0; i < tabContent.length; i++) {
+                tabContent[i].style.display = "none";
+            }
+            document.getElementById(tabName).style.display = "flex";
+            openTab('mause_1')
+        }
+    </script>
 </body>
 
 </html>

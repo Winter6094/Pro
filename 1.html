@@ -7,6 +7,17 @@
     <title>Миша Asus ROG Harpe Ace Aim Lab Edition Bluetooth</title>
     <link rel="stylesheet" href="css/main.css">
 </head>
+<script>
+    function openTab(tabName) {
+        var i;
+        var tabContent = document.getElementsByClassName("tabContent");
+        for (i = 0; i < tabContent.length; i++) {
+            tabContent[i].style.display = "none";
+        }
+        document.getElementById(tabName).style.display = "block";
+    }
+    openTab('mouse_1')
+</script>
 
 <body>
     <div style="flex-grow: 1; ">
@@ -25,7 +36,25 @@
                 </div>
                 <div class="group">
                     <div class="cotalog">
-                        <a class="class_A2" href="">Каталог</a>
+                        <li class="li1" style="display: block;"><a class="class_A2" href="">Каталог</a>
+                            <ul class="catalog_1">
+                                <li onclick="window.location.href ='3.html'" class="catalog_2">
+                                    <span style="margin-left: 20px;">
+                                        Ноутбуки
+                                    </span>
+                                </li>
+                                <li onclick="window.location.href ='2.html'" class="catalog_2">
+                                    <span style="margin-left: 20px;">
+                                        Клавіатури
+                                    </span>
+                                </li>
+                                <li onclick="window.location.href ='1.html'" class="catalog_2">
+                                    <span style="margin-left: 20px;">
+                                        Миші
+                                    </span>
+                                </li>
+                            </ul>
+                        </li>
                     </div>
                 </div>
                 <div class="pro_site">
@@ -35,73 +64,145 @@
                 </div>
             </header>
         </div>
-        <div style="flex-grow: 1;">
-            <h1>Миша Asus ROG Harpe Ace Aim Lab Edition Bluetooth</h1>
-        </div>
-        <div style="display: flex; height: 500px ; width: 100% ;">
-            <div class="class_B2" style="flex-grow: 1;">
+        <div>
+            <div class="class_B2" style="flex-grow: 1; margin-top: 57px;">
                 <div style="margin: 0px 10px;">
                     <h3>Перелік товару</h3>
                     <div style="margin-left: 10px;">
-                        <a class="class_A1" href="1.html">Миша Asus ROG Harpe Ace Aim Lab Edition Bluetooth</a>
+                        <button class="button_1" onclick="openTab('mouse_1')"><span class="class_A1">Миша Asus ROG Harpe Ace Aim Lab Edition Bluetooth</span></button>
                         <br>
-                        <a class="class_A1" href="2.html">Миша Asus ROG Spatha X USB Black</a>
+                        <button class="button_1" onclick="openTab('mouse_2')"><span class="class_A1">Миша Asus ROG Spatha X USB Black</span></button>
                     </div>
                 </div>
             </div>
-            <div class="class_B3" style="flex-grow: 1; width: 1000px">
-                <div class="screen" style="flex-grow: 1;">
-                    <div>
-                        <img src="https://www.proshop.no/Images/915x900/3135167_4505d414c107.png" alt="1" title="2"
-                            widht="100%" height="315px" />
+            <div id="mouse_1" class="tabContent">
+                <div style="flex-grow: 1;">
+                    <h1>Миша Asus ROG Harpe Ace Aim Lab Edition Bluetooth</h1>
+                </div>
+                <div class="content">
+                    <div class="class_B3" style="flex-grow: 1; width: 1000px">
+                        <div style="height: 10px; margin: 0px 20px;">
+                            <h2>
+                                Миша Asus ROG Harpe Ace Aim Lab Edition Bluetooth
+                            </h2>
+                        </div>
+                        <div class="screen" style="flex-grow: 1;">
+                            <div>
+                                <img src="https://www.proshop.no/Images/915x900/3135167_4505d414c107.png" alt="1"
+                                    title="2" widht="100%" height="315px" />
+                            </div>
+                            <div style="margin: 0px 20px;">
+                                <iframe width="560" height="315"
+                                    src="https://www.youtube.com/embed/VE8sTgG3HNk?si=GDqy4dY8H8XzdmWX"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    allowfullscreen></iframe>
+                            </div>
+                        </div>
                     </div>
-                    <div style="margin: 0px 20px;">
-                        <iframe width="560" height="315"
-                            src="https://www.youtube.com/embed/VE8sTgG3HNk?si=GDqy4dY8H8XzdmWX"
-                            title="YouTube video player" frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                            allowfullscreen></iframe>
+                    <div class="class_B1" style="flex-grow: 1; width: 150px;">
+                        <div style="margin: 10px;">
+                            <h3>Опис Миші</h3>
+                            <ul>
+                                <il>Її особливості</il>
+                            </ul>
+                            <ol>
+                                <li>Дротова</li>
+                                <li>Велика</li>
+                                <li>З підставкою</li>
+                                <li>З підсвіткою</li>
+                                <li>5 кнопок </li>
+                                <li>Чрний колір</li>
+                            </ol>
+                            <table border="2" style="border-collapse: collapse; margin-left: 30px;">
+                                <tbody>
+                                    <tr>
+                                        <td colspan="2">Кольори в наявності</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Чорний</td>
+                                        <td>Білий</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Синій</td>
+                                        <td>Червоний</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <div>
+                                <button class="button" type="button" onclick="window.location.href='pay.html'">
+                                    купити
+                                </button>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="class_B1" style="flex-grow: 1; width: 150px;">
-                <div style="margin: 10px;">
-                    <h3>Опис Миші</h3>
-                    <ul>
-                        <il>Її особливості</il>
-                    </ul>
-                    <ol>
-                        <li>Бездротова</li>
-                        <li>Велика</li>
-                        <li>Наявність Bluetooth</li>
-                        <li>З підсвіткою</li>
-                        <li>5 кнопок </li>
-                        <li>Чрний колір</li>
-                    </ol>
+            <div id="mouse_2" class="tabContent">
+                <div style="flex-grow: 1;">
+                    <h1> Миша Asus ROG Spatha X USB Black</h1>
                 </div>
-                <table border="2" style="border-collapse: collapse; margin-left: 30px;">
-                    <tbody>
-                        <tr>
-                            <td colspan="2">Кольори в наявності</td>
-                        </tr>
-                        <tr>
-                            <td>Чорний</td>
-                            <td>Білий</td>
-                        </tr>
-                        <tr>
-                            <td>Синій</td>
-                            <td>Червоний</td>
-                        </tr>
-                    </tbody>
-                </table>
-                <div>
-                    <button class="button" type="button" onclick="window.location.href='pay.html'">
-                        купити
-                    </button>
+                <div class="content">
+                    <div class="class_B3" style="flex-grow: 1; width: 1000px">
+                        <div style="height: 10px; margin: 0px 20px;">
+                            <h2>
+                                Миша Asus ROG Spatha X USB Black
+                            </h2>
+                        </div>
+                        <div class="screen" style="flex-grow: 1;">
+                            <div>
+                                <img src="https://www.bhphotovideo.com/images/images2000x2000/asus_rog_spatha_republic_of_gamers_spatha_1249993.jpg"
+                                    alt="1" title="2" widht="100%" height="315px" />
+                            </div>
+                            <div style="margin: 0px 20px;">
+                                <iframe width="560" height="315"
+                                    src="https://www.youtube.com/embed/-SizFNLo1Jw?si=mhSei4STPPOWlt6l"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    allowfullscreen></iframe>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="class_B1" style="flex-grow: 1; width: 150px;">
+                        <div style="margin: 10px;">
+                            <h3>Опис Миші</h3>
+                            <ul>
+                                <il>Її особливості</il>
+                            </ul>
+                            <ol>
+                                <li>Бездротова</li>
+                                <li>Велика</li>
+                                <li>Наявність Bluetooth</li>
+                                <li>З підсвіткою</li>
+                                <li>5 кнопок </li>
+                                <li>Чрний колір</li>
+                            </ol>
+                            <table border="2" style="border-collapse: collapse; margin-left: 30px;">
+                                <tbody>
+                                    <tr>
+                                        <td colspan="2">Кольори в наявності</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Чорний</td>
+                                        <td>Білий</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Синій</td>
+                                        <td>Червоний</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <div>
+                                <button class="button" type="button" onclick="window.location.href='pay.html'">
+                                    купити
+                                </button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-        <div style="display: flex">
+        <div style="display:flex">
             <div style="flex-grow: 1;">
             </div>
         </div>
