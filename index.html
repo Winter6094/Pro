@@ -7,10 +7,12 @@
     <link rel="shortcut icon" href="logo.png">
     <link rel="stylesheet" href="css/main.css">
 </head>
+<script src="js/main.js">
+</script>
 
 <body>
     <div style="flex-grow: 1;">
-        <div>
+        <div class="header1">
             <header class="header">
                 <div class="logo">
                     <img class="img" src="logo.png">
@@ -20,7 +22,7 @@
                 </div>
                 <div class="group">
                     <div class="golovna">
-                        <a class="class_A2" href="">Головна</a>
+                        <button class="class_A21" onclick="myf()">Головна</button>
                     </div>
                 </div>
                 <div class="group">
@@ -53,59 +55,47 @@
                 </div>
             </header>
         </div>
-        <center>
-            <h1>Про сайт</h1>
-        </center>
-
-    </div>
-    <div style="display: flex; height: 500px ; width: 100% ;">
-        <div class="class_B2" style="flex-grow: 1;">
-            <div style="margin: 0px 10px;">
-                <h3>Каталог</h3>
-                <div style="flex-grow:1; margin-left: 10px;">
-                    <li style="margin: 5px 0px;"><a class="class_A1_1" href="3.html">Ноутбуки</a></li>
-                    <li style="margin: 5px 0px;"><a class="class_A1_1" href="2.html">Клавіатури</a></li>
-                    <li style="margin: 5px 0px;"><a class="class_A1_1" href="1.html">Миші</a></li>
+        <div style="flex-grow: 1;">
+            <h1 style="display: flex; justify-content: center">Про сайт</h1>
+        </div>
+        <div style="display: flex; height: 500px ; align-content: flex-start ;">
+            <div class="class_B2" style="flex-grow: 1;">
+                <div style="margin: 0px 10px;">
+                    <h3>Каталог</h3>
+                    <div style="flex-grow:1; margin-left: 10px;">
+                        <li style="margin: 5px 0px;"><a class="class_A1_1" href="3.html">Ноутбуки</a></li>
+                        <li style="margin: 5px 0px;"><a class="class_A1_1" href="2.html">Клавіатури</a></li>
+                        <li style="margin: 5px 0px;"><a class="class_A1_1" href="1.html">Миші</a></li>
+                    </div>
+                </div>
+            </div>
+            <div class="class_B3" style="flex-grow: 1; width: 1000px">
+                <div style="flex-grow: 1;">
+                    <div class="text">
+                        У нас можна знайти буквально все. Ми продаємо за справедливою ціною та надаємо гарантію, бо
+                        вважаємо, що
+                        онлайн-шопінг має бути максимально зручним і безпечним.
+                        І щоразу, коли хтось натискає «Купити», ми розуміємо, що робимо потрібну справу.
+                    </div>
+                </div>
+            </div>
+            <div class="contact" style="flex-grow: 1;">
+                <div style="margin-left: 10px;">
+                    <h3>Контакти</h3>
+                    <div style="margin-left: 20px;">
+                        Номер телефону: +380501234567
+                        <br>
+                        Пошта: magazin123@gmail.com
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="class_B3" style="flex-grow: 1; width: 1000px">
-            <div style="flex-grow: 1;">
-                <div class="text">
-                    У нас можна знайти буквально все. Ми продаємо за справедливою ціною та надаємо гарантію, бо
-                    вважаємо, що
-                    онлайн-шопінг має бути максимально зручним і безпечним.
-                    І щоразу, коли хтось натискає «Купити», ми розуміємо, що робимо потрібну справу.
-                </div>
-            </div>
-        </div>
-        <div class="contact" style="flex-grow: 1;">
-            <div style="margin-left: 10px;">
-                <h3>Контакти</h3>
-                <div style="margin-left: 20px;">
-                    Номер телефону: +380501234567
-                    <br>
-                    Пошта: magazin123@gmail.com
-                </div>
-            </div>
+        <div style="flex-grow: 1;">
+            <span style="margin: 20px; align-items: center; justify-content: center; display: flex; font-size: 20px;">
+                Дякую за відвідування
+            </span>
         </div>
     </div>
-    <div style="flex-grow: 1;">
-        <span style="margin-top: 10px; align-items: center; justify-content: center; display: flex; font-size: 20px;">
-            Дякую за відвідування
-        </span>
-    </div>
-    <script>
-        function openTab(tabName) {
-            var i;
-            var tabContent = document.getElementsByClassName("cont");
-            for (i = 0; i < tabContent.length; i++) {
-                tabContent[i].style.display = "none";
-            }
-            document.getElementById(tabName).style.display = "flex";
-            openTab('mause_1')
-        }
-    </script>
 </body>
 
 </html>

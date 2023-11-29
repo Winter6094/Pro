@@ -4,24 +4,15 @@
 <head>
     <link rel="shortcut icon" href="logo.png">
     <meta charset="UTF-8">
-    <title>Миші</title>
+    <title>Ноутбуки</title>
     <link rel="stylesheet" href="css/main.css">
 </head>
-<script>
-    function openTab(tabName) {
-        var i;
-        var tabContent = document.getElementsByClassName("tabContent");
-        for (i = 0; i < tabContent.length; i++) {
-            tabContent[i].style.display = "none";
-        }
-        document.getElementById(tabName).style.display = "block";
-    }
-    openTab('mouse_2')
+<script src="js/main.js">
 </script>
 
 <body>
     <div style="flex-grow: 1; ">
-        <div>
+        <div class="header1">
             <header class="header">
                 <div class="logo">
                     <img class="img" src="logo.png">
@@ -31,7 +22,7 @@
                 </div>
                 <div class="group">
                     <div class="golovna">
-                        <a class="class_A2" href="">Головна</a>
+                        <button class="class_A21" onclick="myf()" >Головна</button>
                     </div>
                 </div>
                 <div class="group">
@@ -65,21 +56,22 @@
             </header>
         </div>
         <div>
-            <div class="class_B2" style="flex-grow: 1; margin-top: 57px;">
-                <div style="margin: 0px 10px;">
-                    <h3>Перелік товару</h3>
-                    <div style="margin-left: 10px;">
-                        <button class="button_1" onclick="openTab('mouse_1')"><span class="class_A1">Ноутбук игровой Acer Nitro 5 AN515-58</span></button>
-                        <br>
-                        <button class="button_1" onclick="openTab('mouse_2')"><span class="class_A1">Ноутбук ASUS TUF Gaming F15 (2022) FX507ZC4-HN087</span></button>
-                    </div>
-                </div>
-            </div>
+           
             <div id="mouse_1" style="display: block;" class="tabContent">
                 <div style="flex-grow: 1;">
                     <h1>Ноутбук игровой Acer Nitro 5 AN515-58</h1>
                 </div>
                 <div class="content">
+                    <div class="class_B2" style="flex-grow: 1;">
+                        <div style="margin: 0px 10px;">
+                            <h3>Перелік товару</h3>
+                            <div style="margin-left: 10px;">
+                                <button class="button_1" onclick="openTab('mouse_1')"><span class="class_A1">Ноутбук игровой Acer Nitro 5 AN515-58</span></button>
+                                <br>
+                                <button class="button_1" onclick="openTab('mouse_2')"><span class="class_A1">Ноутбук ASUS TUF Gaming F15 (2022) FX507ZC4-HN087</span></button>
+                            </div>
+                        </div>
+                    </div>
                     <div class="class_B3" style="flex-grow: 1; width: 1000px">
                         <div style="height: 10px; margin: 0px 20px;">
                             <h2>
@@ -87,10 +79,10 @@
                             </h2>
                         </div>
                         <div class="screen" style="flex-grow: 1;">
-                            <div>
+                            <div style="margin: 20px 0px;">
                                 <img src="noyt1.png" alt="1" title="2" widht="100%" height="315px" />
                             </div>
-                            <div style="margin: 0px 20px;">
+                            <div style="margin: 20px 20px;">
                                 <iframe width="560" height="315"
                                     src="https://www.youtube.com/embed/KlmopqEx2w0?si=lA5BKUpa33Wi9Jbl"
                                     title="YouTube video player" frameborder="0"
@@ -142,6 +134,16 @@
                     <h1> Ноутбук ASUS TUF Gaming F15 (2022) FX507ZC4-HN087</h1>
                 </div>
                 <div class="content">
+                    <div class="class_B2" style="flex-grow: 1;">
+                        <div style="margin: 0px 10px;">
+                            <h3>Перелік товару</h3>
+                            <div style="margin-left: 10px;">
+                                <button class="button_1" onclick="openTab('mouse_1')"><span class="class_A1">Ноутбук игровой Acer Nitro 5 AN515-58</span></button>
+                                <br>
+                                <button class="button_1" onclick="openTab('mouse_2')"><span class="class_A1">Ноутбук ASUS TUF Gaming F15 (2022) FX507ZC4-HN087</span></button>
+                            </div>
+                        </div>
+                    </div>
                     <div class="class_B3" style="flex-grow: 1; width: 1000px">
                         <div style="height: 10px; margin: 0px 20px;">
                             <h2>
@@ -149,11 +151,11 @@
                             </h2>
                         </div>
                         <div class="screen" style="flex-grow: 1;">
-                            <div>
+                            <div style="margin: 20px 0px;">
                                 <img src="noyt.png"
                                     alt="1" title="2" widht="100%" height="315px" />
                             </div>
-                            <div style="margin: 0px 20px;">
+                            <div style="margin: 20px 20px;">
                                 <iframe width="560" height="315"
                                     src="https://www.youtube.com/embed/Q0CS5LTAHqM?si=NnAFlqrJqyK53Wr3"
                                     title="YouTube video player" frameborder="0"
